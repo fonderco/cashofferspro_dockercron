@@ -13,6 +13,8 @@ COPY entrypoint.sh /entrypoint.sh
 RUN crontab hello-cron
 RUN chmod +x entrypoint.sh
 
+EXPOSE 8080
+
 ENTRYPOINT ["/entrypoint.sh"]
 
 # https://manpages.ubuntu.com/manpages/trusty/man8/cron.8.html
